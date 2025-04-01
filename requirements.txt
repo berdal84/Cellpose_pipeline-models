@@ -1,0 +1,16 @@
+aicspylibczi==3.0.5
+attr==0.3.2
+cellpose==3.0.8
+matplotlib==3.8.3
+numpy==2.2.4
+opencv_python==4.7.0.72
+opencv_python_headless==4.9.0.80
+Pillow==9.2.0
+Pillow==11.1.0
+pyvista==0.38.5
+readlif==0.6.5
+scipy==1.15.2
+skimage==0.0
+torch==2.2.1
+tqdm==4.66.2
+webcolors==1.13
