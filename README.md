@@ -17,13 +17,13 @@ Supporting software for the research paper: *"Retinoic acid drives cell fate spe
 This repository contains the image analysis pipeline developed to automate cell segmentation and quantification for the paper's retinal organoid experiments. The custom Cellpose models were trained specifically for retinal cell types and used for analyzing thousands of images across multiple experimental conditions.
 ### Installation
 shell
-'''
+```
 conda create -n cellpose_pipeline python==3.9 pip
 conda activate cellpose_pipeline
 git clone https://github.com/blim934/Cellpose_pipeline-models.git
 cd Cellpose_pipeline-models  
 pip install -r requirements.txt
-'''
+```
 ### Key features
 - *GUI interface* to search and process folders of .czi, .lif, and .tif files
 - *Maximum Intensity Projections (MIPs)* generation in various formats
