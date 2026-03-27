@@ -29,14 +29,20 @@ shell
 ```
 git clone https://github.com/berdal84/Cellpose_pipeline-models.git cellpose-pipeline
 cd cellpose-pipeline
-conda create -n cellpose-pipeline-env python==3.9 pip
+conda create -n cellpose-pipeline-env python==3.11 pip -y
 conda activate cellpose-pipeline-env
 pip install -r requirements.txt
 ```
 
+> WARNING: conda create's python version has been changed (3.9 => 3.11), because install errors weer mentionning some packages needed >=3.11. This does not make the project able to be installed, and I also had to bump/switch packages in requirements.txt. But unfortunately it does NOT run either...
+
 ### How to run?
 
-> TODO
+shell
+```
+conda activate cellpose-pipeline-env
+python main.py
+```
 
 ### Key features
 - *GUI interface* to search and process folders of .czi, .lif, and .tif files
