@@ -1,16 +1,27 @@
-aicspylibczi==3.0.5
+
+#
+# Note: 
+#   In a attempt to make this project install, I did few changes.
+#   First, we install for python 3.11 (see README.md).
+#   Then, we bump or switch some packages.
+#   See comments below.
+#   If the project install well, I could not make it run...
+#
+#                                   Bérenger, 2026-03-27
+#
+
+aicspylibczi>=3.0.5 # aicspylibczi==3.0.5 was not installing
 attr==0.3.2
-cellpose==3.0.8
+cellpose>=3.0.8 # cellpose==3.0.8 was not installing
 matplotlib==3.8.3
-numpy==2.2.4
+numpy>=1.21 # numpy==2.2.4 was not compatible with some packages
 opencv_python==4.7.0.72
 opencv_python_headless==4.9.0.80
-Pillow==9.2.0
-Pillow==11.1.0
+Pillow==11.1.0 # Pillow==9.2.0 was also requested, we keep the latest version
 pyvista==0.38.5
 readlif==0.6.5
 scipy==1.15.2
-skimage==0.0
+scikit-image>=0.26.0 # skimage==0.0 would not install and suggest to use scikit-image instead
 torch==2.2.1
 tqdm==4.66.2
 webcolors==1.13
