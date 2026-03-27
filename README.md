@@ -27,10 +27,10 @@ This repository contains the image analysis pipeline developed to automate cell 
 
 shell
 ```
-conda create -n cellpose-pipeline python==3.9 pip
-conda activate cellpose-pipeline
 git clone https://github.com/berdal84/Cellpose_pipeline-models.git cellpose-pipeline
-cd cellpose-pipeline  
+cd cellpose-pipeline
+conda create -n cellpose-pipeline-env python==3.9 pip
+conda activate cellpose-pipeline-env
 pip install -r requirements.txt
 ```
 
